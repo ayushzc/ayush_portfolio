@@ -14,6 +14,10 @@
 </head>
 <body>
 
+    <!--   Preloader Start   -->
+    <div id="preloader"></div>
+    <!--   Preloader End   -->
+
     <!-- Header Section Start -->
     <header class="header">
         <a href="#"><div class="logo">Portfolio.</div></a>
@@ -199,6 +203,13 @@
                     publicKey: "7A6_ud6IwJ-1J2RHX",
                     });
                 })();
+            </script>
+            <script>
+                var loader = document.getElementById("preloader");
+
+                window.addEventListener("load", function(){
+                    loader.style.display = "none";
+                })
             </script>
 </body>
 </html> 
